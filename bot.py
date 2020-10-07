@@ -90,7 +90,7 @@ def handle_text(message):
         bot.send_message(message.chat.id, "плак")
         log(message, answer)
     elif "влад" in message.text:
-        answer = "плак"
+        answer = "плаккк"
         bot.send_message(message.chat.id, "плак")
         log(message, answer)
     if "Какое пиво" in message.text:
