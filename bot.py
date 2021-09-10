@@ -93,10 +93,15 @@ def handle_text(message):
         answer = "плаккк"
         bot.send_message(message.chat.id, "плак")
         log(message, answer)
+   elif message.text == "гд" or message.text == "@all":
+        answer = "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @desbesh"
+        bot.send_message(message.chat.id, "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @desbesh")
+        log(message, answer)
     if "Какое пиво" in message.text:
         answer = constants.random_message1
         bot.send_message(message.chat.id, constants.random_message1())
         log(message, answer)
+        
 
 
 bot.polling(none_stop=True, interval=0)
