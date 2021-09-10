@@ -93,7 +93,7 @@ def handle_text(message):
         answer = "плаккк"
         bot.send_message(message.chat.id, "плак")
         log(message, answer)
-   elif message.text == "гд" or message.text == "@all":
+    elif message.text == "гд" or message.text == "@all":
         answer = "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @desbesh"
         bot.send_message(message.chat.id, "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @desbesh")
         log(message, answer)
