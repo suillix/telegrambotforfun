@@ -94,8 +94,8 @@ def handle_text(message):
         bot.send_message(message.chat.id, "плак")
         log(message, answer)
     elif "Брак вознаграждение" in message.text or message.text == "брак вознаграждение":
-        answer = "у меня тоже могла бы быть жаба..."
-        bot.send_message(message.chat.id, "у меня тоже могла бы быть жаба...")
+        answer = "у меня тоже могла быть жабья семья..."
+        bot.send_message(message.chat.id, "у меня тоже могла быть жабья семья...")
         log(message, answer)
     elif message.text == "гд" or message.text == "@all":
         answer = "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @desbesh"
