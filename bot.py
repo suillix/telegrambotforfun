@@ -45,7 +45,7 @@ def handle_text(message):
         answer = constants.random_message2
         bot.send_message(message.chat.id, constants.random_message2())
         log(message, answer)
-    if "Цитата дня" in message.text:
+    if "Совет дня" in message.text:
         answer = constants.random_message3
         bot.send_message(message.chat.id, constants.random_message3())
         log(message, answer)
