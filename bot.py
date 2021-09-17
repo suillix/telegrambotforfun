@@ -42,6 +42,9 @@ def handle_start(message):
 @bot.message_handler(content_types={"text"})
 def handle_text(message)
         log(message, answer)
+    if "Роберт" in message.text:
+        answer = constants.random_message4
+        bot.send_message(message.chat.id, constants.random_message4())
     if "Кто солнышко" in message.text:
         answer = constants.random_message2
         bot.send_message(message.chat.id, constants.random_message2())
@@ -90,7 +93,7 @@ def handle_text(message)
         answer = "Я репер"
         bot.send_message(message.chat.id, "Я репер")
         log(message, answer)
-    elif "Влад" in message.text:
+    if "Влад" in message.text:
         answer = "плак"
         bot.send_message(message.chat.id, "плак")
         log(message, answer)
@@ -114,12 +117,6 @@ def handle_text(message)
         answer = constants.random_message1
         bot.send_message(message.chat.id, constants.random_message1())
         log(message, answer)
-    if "Роберт" in message.text:
-        answer = constants.random_message4
-        bot.send_message(message.chat.id, constants.random_message4())
-    if А: А = Я
-    else: А = Я
-    
    
 
 bot.polling(none_stop=True, interval=0)
