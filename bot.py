@@ -95,21 +95,30 @@ def handle_text(message):
         log(message, answer)
     elif "влад" in message.text:
         answer = "плаккк"
-        bot.send_message(message.chat.id, "плак")
+        bot.send_message(message.chat.id, "плаккк")
         log(message, answer)
     elif "Брак вознаграждение" in message.text or message.text == "брак вознаграждение":
         answer = "у меня тоже могла быть жабья семья..."
         bot.send_message(message.chat.id, "у меня тоже могла быть жабья семья...")
         log(message, answer)
     elif message.text == "гд" or message.text == "@all":
-        answer = "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @desbesh"
-        bot.send_message(message.chat.id, "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @desbesh")
+        answer = "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @desbesh @youohomi"
+        bot.send_message(message.chat.id, "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @desbesh @youohomi")
+        log(message, answer)
+    elif message.text == "Нет" or message.text == "нет":
+        answer = "Пидора ответ"
+        bot.send_message(message.chat.id, "Пидора ответ")
         log(message, answer)
     if "Какое пиво" in message.text:
         answer = constants.random_message1
         bot.send_message(message.chat.id, constants.random_message1())
         log(message, answer)
-        
+    if "Роберт" or "роберт" in message.text:
+        answer = constants.random_message4
+        bot.send_message(message.chat.id, constants.random_message4())
+        log(message, answer)
+    else answer = constants.random_message4      
+        bot.send_message(message.chat.id, constants.random_message5())
 
 
 bot.polling(none_stop=True, interval=0)
