@@ -103,7 +103,7 @@ def handle_text(message):
         log(message, answer)
     elif message.text == "Роберт":
         answer = constants.random_message5
-        bot.send_message(message.chat.id, constants.random_message5())
+        bot.send_photo(message.chat.id, constants.random_photo5()))
         log(message, answer)
     elif message.text == "Нет" or message.text == "нет":
         answer = "Пидора ответ"
