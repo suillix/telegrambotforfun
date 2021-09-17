@@ -45,8 +45,6 @@ def handle_text(message):
         answer = constants.random_message4
         bot.send_message(message.chat.id, constants.random_message4())
         log(message, answer)
-    if answer = constants.random_message4      
-        bot.send_message(message.chat.id, constants.random_message5())
     if "Кто солнышко" in message.text:
         answer = constants.random_message2
         bot.send_message(message.chat.id, constants.random_message2())
