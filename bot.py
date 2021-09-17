@@ -105,6 +105,10 @@ def handle_text(message):
         answer = constants.random_message5
         bot.send_message(message.chat.id, constants.random_message5())
         log(message, answer)
+    elif message.text == "Нет" or message.text == "нет":
+        answer = "Пидора ответ"
+        bot.send_message(message.chat.id, "Пидора ответ")
+        log(message, answer)
     if "Какое пиво" in message.text:
         answer = constants.random_message1
         bot.send_message(message.chat.id, constants.random_message1())
