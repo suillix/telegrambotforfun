@@ -101,6 +101,10 @@ def handle_text(message):
         answer = "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @desbesh @youohomi"
         bot.send_message(message.chat.id, "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @desbesh @youohomi")
         log(message, answer)
+    elif "Роберт" in message.text:
+        answer = constants.random_message5
+        bot.send_message(message.chat.id, constants.random_message5())
+        log(message, answer)
     if "Какое пиво" in message.text:
         answer = constants.random_message1
         bot.send_message(message.chat.id, constants.random_message1())
