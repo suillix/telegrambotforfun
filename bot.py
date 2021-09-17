@@ -113,7 +113,7 @@ def handle_text(message):
         answer = constants.random_message1
         bot.send_message(message.chat.id, constants.random_message1())
         log(message, answer)
-    if "Роберт" or "роберт" in message.text:
+    if "Роберт" in message.text:
         answer = constants.random_message4
         bot.send_message(message.chat.id, constants.random_message4())
         log(message, answer)
