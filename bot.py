@@ -50,47 +50,47 @@ def handle_text(message)
         answer = constants.random_message3
         bot.send_message(message.chat.id, constants.random_message3())
         log(message, answer)
-    if message.text == "А":
+    elif message.text == "А":
         answer = "Б"
         log(message, answer)
         bot.send_message(message.chat.id, "Б")
-    if message.text == "Б":
+    elif message.text == "Б":
         answer = "Ты играть не умеешь?"
         bot.send_message(message.chat.id, "Ты играть не умеешь?")
         log(message, answer)
-    if message.text == "В":
+    elif message.text == "В":
         answer = "Г"
         bot.send_message(message.chat.id, "Г")
         log(message, answer)
-    if message.text == "Д":
+    elif message.text == "Д":
         answer = "Прекращай уже"
         bot.send_message(message.chat.id, "Прекращай уже")
         log(message, answer)
-    if message.text == "1" or message.text == "2":
+    elif message.text == "1" or message.text == "2":
         answer = "Я гуманитарий"
         bot.send_message(message.chat.id, "Я гуманитарий")
         log(message, answer)
-    if message.text == "Кек":
+    elif message.text == "Кек":
         answer = "Тимур"
         bot.send_message(message.chat.id, "Тимур")
         log(message, answer)
-    if message.text == "Сука":
+    elif message.text == "Сука":
         answer = "Иди нахуй"
         bot.send_message(message.chat.id, "Иди нахуй")
         log(message, answer)
-    if "аха" in message.text:
+    elif "аха" in message.text:
         answer = "Ахахахахаха"
         bot.send_message(message.chat.id, "Ахахахахаха")
         log(message, answer)
-    if message.text == "Тимур":
+    elif message.text == "Тимур":
         answer = "ДА ВЫ ДОСТАЛИ, ДАЙТЕ АНИМЕ ПОСМОТРЕТЬ НОРМАЛЬНО!"
         bot.send_message(message.chat.id, "ДА ВЫ ДОСТАЛИ, ДАЙТЕ АНИМЕ ПОСМОТРЕТЬ НОРМАЛЬНО!")
         log(message, answer)
-    if "Тимур ты кто" in message.text:
+    elif "Тимур ты кто" in message.text:
         answer = "Я репер"
         bot.send_message(message.chat.id, "Я репер")
         log(message, answer)
-    if "Влад" in message.text:
+    elif "Влад" in message.text:
         answer = "плак"
         bot.send_message(message.chat.id, "плак")
         log(message, answer)
