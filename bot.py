@@ -40,15 +40,10 @@ def handle_start(message):
     bot.send_message(message.chat.id, constants.Whoareyou)
 
 @bot.message_handler(content_types={"text"})
-def handle_text(message)
-        log(message, answer)
+def handle_text(message):
     if "Кто солнышко" in message.text:
         answer = constants.random_message2
         bot.send_message(message.chat.id, constants.random_message2())
-        log(message, answer)
-    elif "Совет дня" in message.text:
-        answer = constants.random_message3
-        bot.send_message(message.chat.id, constants.random_message3())
         log(message, answer)
     elif message.text == "А":
         answer = "Б"
@@ -90,30 +85,11 @@ def handle_text(message)
         answer = "Я репер"
         bot.send_message(message.chat.id, "Я репер")
         log(message, answer)
-    elif "Влад" in message.text:
-        answer = "плак"
-        bot.send_message(message.chat.id, "плак")
-        log(message, answer)
-    elif "влад" in message.text:
-        answer = "плаккк"
-        bot.send_message(message.chat.id, "плаккк")
-        log(message, answer)
-    elif "Брак вознаграждение" in message.text or message.text == "брак вознаграждение":
-        answer = "у меня тоже могла быть жабья семья..."
-        bot.send_message(message.chat.id, "у меня тоже могла быть жабья семья...")
-        log(message, answer)
-    elif message.text == "гд" or message.text == "@all":
-        answer = "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @desbesh @youohomi"
-        bot.send_message(message.chat.id, "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @desbesh @youohomi")
-        log(message, answer)
-    elif message.text == "Нет" or message.text == "нет":
-        answer = "Пидора ответ"
-        bot.send_message(message.chat.id, "Пидора ответ")
-        log(message, answer)
-    elif "Какое пиво" in message.text:
+    if "Какое пиво" in message.text:
         answer = constants.random_message1
         bot.send_message(message.chat.id, constants.random_message1())
         log(message, answer)
+
    
 
 bot.polling(none_stop=True, interval=0)
