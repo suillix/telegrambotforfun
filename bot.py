@@ -93,11 +93,11 @@ def handle_text(message)
         answer = "Я репер"
         bot.send_message(message.chat.id, "Я репер")
         log(message, answer)
-    if "Влад" in message.text:
+    elif "Влад" in message.text:
         answer = "плак"
         bot.send_message(message.chat.id, "плак")
         log(message, answer)
-    if "влад" in message.text:
+    elif "влад" in message.text:
         answer = "плаккк"
         bot.send_message(message.chat.id, "плаккк")
         log(message, answer)
