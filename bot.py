@@ -117,6 +117,8 @@ def handle_text(message)
     if "Роберт" in message.text:
         answer = constants.random_message4
         bot.send_message(message.chat.id, constants.random_message4())
+    if А: А = Я
+    else: А = Я
     
    
 
