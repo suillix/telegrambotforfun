@@ -85,7 +85,7 @@ def handle_text(message):
         answer = "Я репер"
         bot.send_message(message.chat.id, "Я репер")
         log(message, answer)
-        elif "Влад" in message.text:
+    elif "Влад" in message.text:
         answer = "плак"
         bot.send_message(message.chat.id, "плак")
         log(message, answer)
