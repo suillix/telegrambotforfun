@@ -2,7 +2,7 @@ import random
 
 token = "1186576822:AAHTc_0bShvDm4T7m9MbXqU9ZWvDu814LDQ"
 
-picture = [ https://s0.rbk.ru/v6_top_pics/media/img/9/89/755991631046899.jpg", "https://download.loveradio.ru/pub/1658213.jpg", "https://download.loveradio.ru/pub/1658163.jpg", "https://download.loveradio.ru/pub/1658170.jpg", "https://saltmag.ru/media/articles/inner/2020/5065/robert-pattinson-gq-cover-june-july-2020-09.jpg"]
+picture = [ "https://s0.rbk.ru/v6_top_pics/media/img/9/89/755991631046899.jpg", "https://download.loveradio.ru/pub/1658213.jpg", "https://download.loveradio.ru/pub/1658163.jpg", "https://download.loveradio.ru/pub/1658170.jpg", "https://saltmag.ru/media/articles/inner/2020/5065/robert-pattinson-gq-cover-june-july-2020-09.jpg"]
 random_message5 = lambda: random.choice(picture)
 
 startAnswer = "Приветики пистолетики"
