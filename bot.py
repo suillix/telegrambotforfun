@@ -102,16 +102,12 @@ def handle_text(message):
         bot.send_message(message.chat.id, "у меня тоже могла быть жабья семья...")
         log(message, answer)
     elif message.text == "гд" or message.text == "@all":
-        answer = "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @desbesh @youohomi"
-        bot.send_message(message.chat.id, "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @desbesh @youohomi")
-        log(message, answer)
-    elif message.text == "д" or message.text == "@all":
         answer = "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @youohomi"
         bot.send_message(message.chat.id,"@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @youohomi")
         log(message, answer)
-        answer = "@desbesh"
+        answer1 = "@desbesh"
         bot.send_message(message.chat.id,"@desbesh")
-        log(message, answer)
+        log(message, answer1)
     elif message.text == "Роберт":
         answer = constants.random_message5
         bot.send_message(message.chat.id, constants.random_message5())
