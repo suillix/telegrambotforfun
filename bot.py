@@ -101,9 +101,9 @@ def handle_text(message):
         answer = "у меня тоже могла быть жабья семья..."
         bot.send_message(message.chat.id, "у меня тоже могла быть жабья семья...")
         log(message, answer)
-    elif message.text == "гд" or message.text == "@all":
-        answer = "@desbesh"        
-        bot.send_message(message.chat.id,"@desbesh")
+    elif "гд" in message.text:
+        answer = "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @youohomi @desbesh @youohomi"
+        bot.send_message(message.chat.id,"@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @desbesh @youohomi")
         log(message, answer)
     elif message.text == "Роберт":
         answer = constants.random_message5
