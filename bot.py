@@ -105,7 +105,7 @@ def handle_text(message):
         answer = "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @desbesh @youohomi"
         bot.send_message(message.chat.id, "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @desbesh @youohomi")
         log(message, answer)
-    elif "никита" in message.text:
+    elif message.text == "Никита":
         answer = "@desbesh"
         bot.send_message(message.chat.id, "@desbesh")
         log(message, answer)
