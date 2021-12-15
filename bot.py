@@ -90,12 +90,12 @@ def handle_text(message):
         bot.send_message(message.chat.id, "у меня тоже могла быть жабья семья...")
         log(message, answer)
     elif  message.text == "гд" or message.text == "@all":
-        answer = "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @youohomi @desbesh @youohomi"
-        bot.send_message(message.chat.id,"@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @desbesh @youohomi")
+        answer = "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @youohomi @youohomi"
+        bot.send_message(message.chat.id,"@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @youohomi")
         log(message, answer)
-    elif "никита" in message.text:
-        answer = "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @youohomi @desbesh @youohomi"
-        bot.send_message(message.chat.id, "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @youohomi @desbesh @youohomi")
+    elif "Гд" in message.text:
+        answer = "@Anton_Chuvirov @desbesh"
+        bot.send_message(message.chat.id, "@Anton_Chuvirov @desbesh")
         log(message, answer)
     elif message.text == "Роберт":
         answer = constants.random_message5
