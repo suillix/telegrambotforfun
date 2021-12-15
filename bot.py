@@ -105,17 +105,13 @@ def handle_text(message):
         answer = "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @youohomi @desbesh @Anton_Chuvirov"
         bot.send_message(message.chat.id,"@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @desbesh @youohomi @Anton_Chuvirov")
         log(message, answer)
-    elif "никита" in message.text:
-        answer = ""
-        bot.send_message(message.chat.id, "")
+    elif message.text == "Хуй":
+        answer = "@Anton_Chuvirov @desbesh"
+        bot.send_message(message.chat.id, "@Anton_Chuvirov @desbesh")
         log(message, answer)
     elif message.text == "Роберт":
         answer = constants.random_message5
         bot.send_message(message.chat.id, constants.random_message5())
-        log(message, answer)
-    elif message.text == "Хуй":
-        answer = "@Anton_Chuvirov @desbesh"
-        bot.send_message(message.chat.id, "@Anton_Chuvirov @desbesh")
         log(message, answer)
      elif message.text == "Нет" or message.text == "нет":
         answer = "пидора ответ"
