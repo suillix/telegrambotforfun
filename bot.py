@@ -1,22 +1,14 @@
 import telebot
 from telebot import TeleBot
-
 import constants
-
 bot: TeleBot = telebot.TeleBot(constants.token)
-
 #  bot.send_message(348473859, "test")
-
 #  upd = bot.get_updates()
 #  print(upd)
-
 #  last_upd = upd(-1)
 #  message_from_user = last_upd.message
 #  print(message_from_user)
-
 print(bot.get_me())
-
-
 def log(message, answer):
     print("\n -----")
     from datetime import datetime
@@ -26,19 +18,15 @@ def log(message, answer):
                                                                    str(message.from_user.id),
                                                                    message.text))
     print(answer)
-
 @bot.message_handler(commands=['start'])
 def handle_start(message):
     bot.send_message(message.chat.id, constants.startAnswer)
-
 @bot.message_handler(commands=["help"])
 def handle_text(message):
     bot.send_message(message.chat.id, """Ну ничего себе у тебя запросы!""")
-
 @bot.message_handler(commands=['whoareyou'])
 def handle_start(message):
     bot.send_message(message.chat.id, constants.Whoareyou)
-
 @bot.message_handler(content_types={"text"})
 def handle_text(message):
     if "Кто солнышко" in message.text:
@@ -101,17 +89,21 @@ def handle_text(message):
         answer = "у меня тоже могла быть жабья семья..."
         bot.send_message(message.chat.id, "у меня тоже могла быть жабья семья...")
         log(message, answer)
-    elif  message.text == "Гд" or message.text == "@all":
-        answer = "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @youohomi @desbesh @Anton_Chuvirov"
-        bot.send_message(message.chat.id,"@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @desbesh @youohomi @Anton_Chuvirov")
+    elif  message.text == "гд" or message.text == "@all":
+        answer = "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @youohomi @desbesh @youohomi"
+        bot.send_message(message.chat.id,"@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @desbesh @youohomi")
+        log(message, answer)
+    elif "никита" in message.text:
+        answer = "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @youohomi @desbesh @youohomi"
+        bot.send_message(message.chat.id, "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @youohomi @desbesh @youohomi")
         log(message, answer)
     elif message.text == "Роберт":
         answer = constants.random_message5
         bot.send_message(message.chat.id, constants.random_message5())
         log(message, answer)
-     elif message.text == "Нет" or message.text == "нет":
-        answer = "пидора ответ"
-        bot.send_message(message.chat.id, "пидора ответ")
+    elif message.text == "Нет" or message.text == "нет":
+        answer = "Пидора ответ"
+        bot.send_message(message.chat.id, "Пидора ответ")
         log(message, answer)
     elif message.text == "Да" or message.text == "да":
         answer = "пизда"
@@ -121,7 +113,5 @@ def handle_text(message):
         answer = constants.random_message1
         bot.send_message(message.chat.id, constants.random_message1())
         log(message, answer)
-
    
-
 bot.polling(none_stop=True, interval=0)
