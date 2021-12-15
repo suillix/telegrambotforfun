@@ -89,7 +89,7 @@ def handle_text(message):
         answer = "у меня тоже могла быть жабья семья..."
         bot.send_message(message.chat.id, "у меня тоже могла быть жабья семья...")
         log(message, answer)
-    elif  message.text == "гд" or message.text == "@all":
+    elif  message.text == "Гд" or message.text == "@all":
         answer = "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @youohomi @youohomi"
         bot.send_message(message.chat.id,"@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @youohomi")
         log(message, answer)
