@@ -106,16 +106,20 @@ def handle_text(message):
         bot.send_message(message.chat.id,"@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @desbesh @youohomi @Anton_Chuvirov")
         log(message, answer)
     elif "никита" in message.text:
-        answer = "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @youohomi @desbesh @youohomi @Anton_Chuvirov"
-        bot.send_message(message.chat.id, "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @youohomi @desbesh @youohomi @Anton_Chuvirov")
+        answer = ""
+        bot.send_message(message.chat.id, "")
         log(message, answer)
     elif message.text == "Роберт":
         answer = constants.random_message5
         bot.send_message(message.chat.id, constants.random_message5())
         log(message, answer)
-    elif message.text == "Нет" or message.text == "нет":
-        answer = "@Anton_Chuvirov @desbesh @suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @youohomi @Anton_Chuvirov @desbesh"
-        bot.send_message(message.chat.id, "@Anton_Chuvirov @desbesh @suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @youohomi")
+    elif message.text == "Гд":
+        answer = "@Anton_Chuvirov @desbesh"
+        bot.send_message(message.chat.id, "@Anton_Chuvirov @desbesh")
+        log(message, answer)
+     elif message.text == "Нет" or message.text == "нет":
+        answer = "пидора ответ"
+        bot.send_message(message.chat.id, "пидора ответ")
         log(message, answer)
     elif message.text == "Да" or message.text == "да":
         answer = "пизда"
