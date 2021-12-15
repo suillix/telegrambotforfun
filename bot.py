@@ -114,8 +114,8 @@ def handle_text(message):
         bot.send_message(message.chat.id, constants.random_message5())
         log(message, answer)
     elif message.text == "Нет" or message.text == "нет":
-        answer = "Пидора ответ"
-        bot.send_message(message.chat.id, "Пидора ответ")
+        answer = "@Anton_Chuvirov @desbesh"
+        bot.send_message(message.chat.id, "@Anton_Chuvirov @desbesh")
         log(message, answer)
     elif message.text == "Да" or message.text == "да":
         answer = "пизда"
