@@ -102,7 +102,7 @@ def handle_text(message):
         bot.send_message(message.chat.id, "у меня тоже могла быть жабья семья...")
         log(message, answer)
     elif  message.text == "Гд" or message.text == "@all":
-        answer = "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @youohomi @desbesh @youohomi @Anton_Chuvirov"
+        answer = "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @youohomi @desbesh @Anton_Chuvirov"
         bot.send_message(message.chat.id,"@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @desbesh @youohomi @Anton_Chuvirov")
         log(message, answer)
     elif "никита" in message.text:
@@ -114,8 +114,8 @@ def handle_text(message):
         bot.send_message(message.chat.id, constants.random_message5())
         log(message, answer)
     elif message.text == "Нет" or message.text == "нет":
-        answer = "@Anton_Chuvirov @desbesh"
-        bot.send_message(message.chat.id, "@Anton_Chuvirov @desbesh")
+        answer = "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @youohomi @Anton_Chuvirov @desbesh"
+        bot.send_message(message.chat.id, "@suiiyiux @Belyank1n @makaroshnaya @grustnyichai @RinnaTyan @youohomi @Anton_Chuvirov @desbesh")
         log(message, answer)
     elif message.text == "Да" or message.text == "да":
         answer = "пизда"
