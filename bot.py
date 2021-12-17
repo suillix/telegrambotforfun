@@ -18,11 +18,6 @@ def log(message, answer):
                                                                    str(message.from_user.id),
                                                                    message.text))
     print(answer)
- def start(update, context):
-    context.bot.send_message(chat_id=update.message.chat_id,
-                     text="1")
-    context.job_queue.run_daily()(callback_minute, interval=10, first=30,
-                                    context=update.message.chat_id)
 @bot.message_handler(commands=['start'])
 def handle_start(message):
     bot.send_message(message.chat.id, constants.startAnswer)
@@ -34,6 +29,11 @@ def handle_start(message):
     bot.send_message(message.chat.id, constants.Whoareyou)
 @bot.message_handler(content_types={"text"})
 def handle_text(message):
+    if "Покормить жабу" in message.text:
+        answer = "Покормить жабу"
+        log(message, answer)
+        bot.send_message(message.chat.id, "Покормить жабу")
+        context.job_queue.run_daily()(callback_minute, interval=10, first=30, context=update.message.chat_id)
     if "Кто солнышко" in message.text:
         answer = constants.random_message2
         bot.send_message(message.chat.id, constants.random_message2())
