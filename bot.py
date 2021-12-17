@@ -18,6 +18,11 @@ def log(message, answer):
                                                                    str(message.from_user.id),
                                                                    message.text))
     print(answer)
+ def start(update, context):
+    context.bot.send_message(chat_id=update.message.chat_id,
+                     text="1")
+    context.job_queue.run_daily()(callback_minute, interval=10, first=30,
+                                    context=update.message.chat_id)
 @bot.message_handler(commands=['start'])
 def handle_start(message):
     bot.send_message(message.chat.id, constants.startAnswer)
