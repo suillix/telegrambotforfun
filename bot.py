@@ -108,6 +108,10 @@ def handle_text(message):
         answer = "пизда"
         bot.send_message(message.chat.id, "пизда")
         log(message, answer)
+    elif message.text == "Тимур, возьми":
+        answer = "Взять жабу"
+        bot.send_message(message.chat.id, "Взять жабу")
+        log(message, answer)
     if "Какое пиво" in message.text:
         answer = constants.random_message1
         bot.send_message(message.chat.id, constants.random_message1())
