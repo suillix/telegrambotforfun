@@ -18,9 +18,6 @@ def log(message, answer):
                                                                    str(message.from_user.id),
                                                                    message.text))
     print(answer)
-def callback_alarm(context: telegram.ext.CallbackContext):
-   bot.send_message(chat_id=id, text='Покормить жабу')
-   context.job_queue.run_daily(callback_alarm, context=update.message.chat_id,days=(0, 1, 2, 3, 4, 5, 6),time = time(hour = 11, minute = 12, second = 30))
 @bot.message_handler(commands=['start'])
 def handle_start(message):
     bot.send_message(message.chat.id, constants.startAnswer)
