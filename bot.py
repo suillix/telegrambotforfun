@@ -29,10 +29,10 @@ def handle_start(message):
     bot.send_message(message.chat.id, constants.Whoareyou)
 @bot.message_handler(content_types={"text"})
 def handle_text(message):
-    if "Покормить жабу" in message.text:
+    if "Покорми жабу1" in message.text:
         answer = "Покормить жабу"
         log(message, answer)
-        context.job_queue.run_daily()(callback_minute, interval=12 hours, first=0, context=update.message.chat_id)
+        bot.send_message(message.chat.id, "Покормить жабу")
     if "Кто солнышко" in message.text:
         answer = constants.random_message2
         bot.send_message(message.chat.id, constants.random_message2())
