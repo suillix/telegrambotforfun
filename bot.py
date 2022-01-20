@@ -89,10 +89,6 @@ def handle_text(message):
         answer = "плаккк"
         bot.send_message(message.chat.id, "плаккк")
         log(message, answer)
-    elif "Брак вознаграждение" in message.text or message.text == "брак вознаграждение":
-        answer = "у меня тоже могла быть жабья семья..."
-        bot.send_message(message.chat.id, "у меня тоже могла быть жабья семья...")
-        log(message, answer)
     elif  message.text == "Гд" or message.text == "@all":
         answer = "@suiiyiux @Belyank1n @makaroshnaya @RinnaTyan  @youohomi"
         bot.send_message(message.chat.id,"@suiiyiux @Belyank1n @makaroshnaya @RinnaTyan @youohomi")
@@ -119,9 +115,9 @@ def handle_text(message):
         answer = "пизда"
         bot.send_message(message.chat.id, "пизда")
         log(message, answer)
-    elif message.text == "Тимур, возьми":
-        answer = "Взять жабу"
-        bot.send_message(message.chat.id, "Взять жабу")
+    elif message.text == "Почему ты не отвечаешь?":
+        answer = "Обязан?"
+        bot.send_message(message.chat.id, "Обязан?")
         log(message, answer)
     if "Какое пиво" in message.text:
         answer = constants.random_message1
