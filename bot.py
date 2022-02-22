@@ -90,11 +90,11 @@ def handle_text(message):
         bot.send_message(message.chat.id, "плаккк")
         log(message, answer)
     elif  message.text == "Гд" or message.text == "@all":
-        answer = "@suiiyiux @Belyank1n @makaroshnaya @RinnaTyan  @youohomi"
-        bot.send_message(message.chat.id,"@suiiyiux @Belyank1n @makaroshnaya @RinnaTyan @youohomi")
+        answer = "@suiiyiux @Belyank1n @makaroshnaya  @youohomi"
+        bot.send_message(message.chat.id,"@suiiyiux @Belyank1n @makaroshnaya @youohomi")
         log(message, answer)
-        answer = "@Anton_Chuvirov @desbesh"
-        bot.send_message(message.chat.id, "@Anton_Chuvirov @desbesh")
+        answer = "@desbesh"
+        bot.send_message(message.chat.id, "@desbesh")
         log(message, answer)
     elif  message.text == "Гдл" or message.text == "гдл":
         answer = "@suiiyiux @Belyank1n @youohomi"
